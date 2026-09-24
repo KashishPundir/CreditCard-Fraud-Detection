@@ -19,6 +19,20 @@ This project follows a production-oriented machine learning workflow:
 - Docker Hub image publishing
 - Git/GitHub version control
 
+## Technology Stack
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- FastAPI
+- Uvicorn
+- Docker
+- Docker Hub
+- MLflow
+- Git
+- GitHub
+  
 ## Model
 
 The final production model is an XGBoost classifier.
