@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Legacy XGBoost pickle
+final_fraud_xgboost_model.pkl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.env
