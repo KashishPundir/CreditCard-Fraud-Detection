@@ -29,3 +29,7 @@ jobs:
       - name: Verify application imports
         run: |
           python -c "from app import app; print('FastAPI application loaded successfully')"
+
+      - name: Build API Docker image
+        run: |
+          docker build -t fraud-detection-api:ci .
