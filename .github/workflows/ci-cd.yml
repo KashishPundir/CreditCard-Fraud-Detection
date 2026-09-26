@@ -51,3 +51,7 @@ jobs:
       - name: Push API image
         run: |
           docker push kashish1303/fraud-detection-api:latest
+
+      - name: Tag Streamlit UI image
+        run: |
+          docker tag fraud-detection-ui:ci kashish1303/fraud-detection-ui:latest
