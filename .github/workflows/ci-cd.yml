@@ -1,0 +1,20 @@
+name: Fraud Detection CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Confirm CI runner
+        run: echo "GitHub Actions CI runner is working!"
