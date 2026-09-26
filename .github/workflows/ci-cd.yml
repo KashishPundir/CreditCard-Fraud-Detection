@@ -33,7 +33,13 @@ jobs:
       - name: Build API Docker image
         run: |
           docker build -t fraud-detection-api:ci .
-          
+
       - name: Build Streamlit UI Docker image
         run: |
           docker build -f Dockerfile.ui -t fraud-detection-ui:ci .
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_kp }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
