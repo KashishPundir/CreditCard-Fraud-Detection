@@ -43,3 +43,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_KP }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Tag API image
+        run: |
+          docker tag fraud-detection-api:ci kashish1303/fraud-detection-api:latest
