@@ -75,9 +75,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-API_URL = "http://fraud-detection-api:8000/predict"
-
-HEALTH_URL = "http://fraud-detection-api:8000/health"
+API_URL = "https://fraud-detection-j5nt.onrender.com/predict"
+HEALTH_URL = "https://fraud-detection-j5nt.onrender.com/health"
 
 # --------------------------------------------------
 # API Status
