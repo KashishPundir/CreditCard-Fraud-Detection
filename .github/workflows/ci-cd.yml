@@ -55,3 +55,7 @@ jobs:
       - name: Tag Streamlit UI image
         run: |
           docker tag fraud-detection-ui:ci kashish1303/fraud-detection-ui:latest
+
+      - name: Push Streamlit UI image
+        run: |
+          docker push kashish1303/fraud-detection-ui:latest
