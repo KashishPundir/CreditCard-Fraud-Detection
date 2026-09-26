@@ -814,11 +814,13 @@ Random seeds (`random_state=42`, H2O `seed=42`) are fixed throughout to support 
 
 | View | Screenshot |
 |---|---|
-| Streamlit UI — Home | `docs/screenshots/ui-home.png` |
-| Streamlit UI — Fraud Prediction | `docs/screenshots/ui-fraud-result.png` |
-| Streamlit UI — Legitimate Prediction | `docs/screenshots/ui-legit-result.png` |
-| FastAPI Swagger Docs | `docs/screenshots/api-swagger.png` |
-| MLflow Run | `docs/screenshots/mlflow-run.png` |
+| Streamlit UI — Home | `screenshots/ui-home.png` |
+| Streamlit UI — Fraud Prediction | `screenshots/ui-fraud-result-input.png` |
+| Streamlit UI — Fraud Prediction | `screenshots/ui-fraud-result-output.png` |
+| Streamlit UI — Legitimate Prediction | `screenshots/ui-legit-result.png` |
+| FastAPI Swagger Docs | `screenshots/api-swagger.png` |
+| MLflow Run | `screenshots/mlflow-run.png` |
+| Render Deployment | `screenshots/render-deployment.png` |
 
 ---
 
