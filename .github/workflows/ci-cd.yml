@@ -47,3 +47,7 @@ jobs:
       - name: Tag API image
         run: |
           docker tag fraud-detection-api:ci kashish1303/fraud-detection-api:latest
+
+      - name: Push API image
+        run: |
+          docker push kashish1303/fraud-detection-api:latest
