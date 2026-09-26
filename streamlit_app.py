@@ -75,9 +75,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "http://fraud-detection-api:8000/predict"
 
-HEALTH_URL = "http://127.0.0.1:8000/health"
+HEALTH_URL = "http://fraud-detection-api:8000/health"
 
 # --------------------------------------------------
 # API Status
