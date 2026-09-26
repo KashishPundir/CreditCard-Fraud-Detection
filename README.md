@@ -810,18 +810,16 @@ Random seeds (`random_state=42`, H2O `seed=42`) are fixed throughout to support 
 
 ## 31. Screenshots
 
-> _Add screenshots to a `docs/screenshots/` directory and reference them below._
-
 | View | Screenshot |
 |---|---|
-| Streamlit UI — Home | `screenshots/ui-home.png` |
-| Streamlit UI — Fraud Prediction | `screenshots/ui-fraud-result-input.png` |
-| Streamlit UI — Fraud Prediction | `screenshots/ui-fraud-result-output.png` |
-| Streamlit UI — Legitimate Prediction | `screenshots/ui-legit-result.png` |
-| FastAPI Swagger Docs | `screenshots/api-swagger.png` |
-| MLflow Run | `screenshots/mlflow-run.png` |
-| Render Deployment | `screenshots/render-deployment.png` |
-
+| Streamlit UI — Home | [screenshots/ui-home.png](screenshots/ui-home.png) |
+| Streamlit UI — Fraud Prediction (input) | [screenshots/ui-fraud-result-input.png](screenshots/ui-fraud-result-input.png) |
+| Streamlit UI — Fraud Prediction (output) | [screenshots/ui-fraud-result-output.png](screenshots/ui-fraud-result-output.png) |
+| Streamlit UI — Legitimate Prediction | [screenshots/ui-legit-result.png](screenshots/ui-legit-result.png) |
+| FastAPI Swagger Docs | [screenshots/api-swagger.png](screenshots/api-swagger.png) |
+| MLflow Run | [screenshots/mlflow-run.png](screenshots/mlflow-run.png) |
+| Render Deployment | [screenshots/render-deployment.png](screenshots/render-deployment.png) |
+ 
 ---
 
 ## 32. Local Setup
