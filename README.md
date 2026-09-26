@@ -45,3 +45,7 @@ Final validation threshold:
 
 ```text
 0.09133733808994293
+```
+
+<img width="270" height="204" alt="image" src="https://github.com/user-attachments/assets/952c8e62-45af-4015-b567-25a96fe5db9a" />
+
