@@ -17,6 +17,9 @@
 </p>
 
 ---
+🌐 **Live Application:** [Credit Card Fraud Detection](https://fraud-detection-ui-yyA6.onrender.com)
+
+---
 
 ## Table of Contents
 
