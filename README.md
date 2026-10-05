@@ -17,6 +17,11 @@
 </p>
 
 ---
+## 🚀 Live Demo
+
+👉 **[Try the Credit Card Fraud Detection App](https://fraud-detection-ui-yyA6.onrender.com)**
+
+---
 
 ## Table of Contents
 
