@@ -158,11 +158,13 @@ streamlit run streamlit_app.py     # UI  → http://localhost:8501
 **Docker:**
 
 ```bash
-docker build -t fraud-detection-api -f Dockerfile .
-docker build -t fraud-detection-ui  -f Dockerfile.ui .
-docker network create fraud-network
-docker run -d --network fraud-network -p 8000:8000 fraud-detection-api
-docker run -d --network fraud-network -p 8501:8501 fraud-detection-ui
+docker compose pull
+docker compose up -d
+```
+
+Then open:
+```
+http://127.0.0.1:8501
 ```
 
 **CI/CD:** on push or pull request to `main`, GitHub Actions checks the app imports, builds both images, and pushes them to Docker Hub (`kashish1303/fraud-detection-api`, `kashish1303/fraud-detection-ui`; secrets `DOCKERHUB_USERNAME`, `DOCKERHUB_TOKEN`). **Render redeploys are manual**; there is no automated deploy hook.
