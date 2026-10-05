@@ -1,0 +1,18 @@
+services:
+  api:
+    image: kashish1303/fraud-detection-api:latest
+    container_name: fraud-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  ui:
+    image: kashish1303/fraud-detection-ui:latest
+    container_name: fraud-ui
+    ports:
+      - "8501:8501"
+    environment:
+      API_BASE_URL: http://api:8000
+    depends_on:
+      - api
+    restart: unless-stopped
