@@ -1,4 +1,4 @@
-# 💳 Sentinel DC — End-to-End ML/MLOps System
+# 💳 CreditCard Fraud Detection — End-to-End ML/MLOps System
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white" />
