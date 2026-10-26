@@ -1,0 +1,42 @@
+---
+- name: Verify Docker for Credit Card Fraud Detection
+  hosts: local
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Check Docker version
+      ansible.builtin.command: docker --version
+      register: docker_version
+      changed_when: false
+
+    - name: Display Docker version
+      ansible.builtin.debug:
+        var: docker_version.stdout
+
+    - name: Check running containers
+      ansible.builtin.command: docker ps
+      register: containers
+      changed_when: false
+
+    - name: Display running containers
+      ansible.builtin.debug:
+        var: containers.stdout_lines
+
+    - name: Check fraud API health
+      ansible.builtin.uri:
+        url: http://localhost:8000/health
+        method: GET
+        status_code: 200
+      register: api_health
+
+    - name: Display API health result
+      ansible.builtin.debug:
+        msg: "Fraud API health check passed."
+
+    - name: Verify API reports healthy status
+      ansible.builtin.assert:
+        that:
+          - api_health.json.status == "healthy"
+        success_msg: "Fraud Detection API is healthy."
+        fail_msg: "Fraud Detection API is not healthy."
