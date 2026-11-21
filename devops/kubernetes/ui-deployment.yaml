@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: fraud-ui
+  namespace: fraud-detection
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: fraud-ui
+
+  template:
+    metadata:
+      labels:
+        app: fraud-ui
+
+    spec:
+      containers:
+        - name: fraud-ui
+          image: kashish1303/fraud-detection-ui:latest
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 8501
+
+          env:
+            - name: API_BASE_URL
+              value: "http://fraud-api-service:8000"
