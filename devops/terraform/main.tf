@@ -7,9 +7,7 @@ terraform {
   }
 }
 
-provider "docker" {
-  host = "unix:///var/run/docker.sock"
-}
+provider "docker" {}
 
 resource "docker_image" "experiment" {
   name         = "nginx:alpine"
